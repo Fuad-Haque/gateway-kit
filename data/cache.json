@@ -1,0 +1,13 @@
+{
+  "daily_requests": 1200000,
+  "uncached_request_cost": 0.0095,
+  "lookup_cost": 0.00004,
+  "wrong_answer_cost": 0.50,
+  "max_wrong_rate": 0.0005,
+  "options": [
+    {"threshold": "0.98", "hit_rate": 0.18, "wrong_rate_among_hits": 0.002},
+    {"threshold": "0.95", "hit_rate": 0.31, "wrong_rate_among_hits": 0.011},
+    {"threshold": "0.92", "hit_rate": 0.42, "wrong_rate_among_hits": 0.038},
+    {"threshold": "0.90", "hit_rate": 0.49, "wrong_rate_among_hits": 0.075}
+  ]
+}

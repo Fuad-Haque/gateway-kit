@@ -1,0 +1,15 @@
+{
+  "daily_requests": 2400000,
+  "baseline_model": "B",
+  "models": {
+    "A": {"input_per_m": 0.15, "output_per_m": 0.60},
+    "B": {"input_per_m": 3.00, "output_per_m": 15.00}
+  },
+  "constraints": {"min_blended_pass": 96.0, "min_class_pass": 90},
+  "classes": [
+    {"name": "faq_lookup", "share": 0.40, "avg_in_tokens": 900, "avg_out_tokens": 120, "pass_rate": {"A": 97, "B": 99}},
+    {"name": "summarize", "share": 0.25, "avg_in_tokens": 3200, "avg_out_tokens": 300, "pass_rate": {"A": 93, "B": 97}},
+    {"name": "extract_json", "share": 0.20, "avg_in_tokens": 1500, "avg_out_tokens": 150, "pass_rate": {"A": 96, "B": 98}},
+    {"name": "reasoning_support", "share": 0.15, "avg_in_tokens": 1800, "avg_out_tokens": 600, "pass_rate": {"A": 71, "B": 94}}
+  ]
+}

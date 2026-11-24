@@ -1,0 +1,10 @@
+{
+  "scenarios": {"normal": 2000000, "incident": 1500000},
+  "tenants": [
+    {"name": "alpha", "guaranteed": 800000, "weight": 4, "demand": 1100000},
+    {"name": "bravo", "guaranteed": 500000, "weight": 2, "demand": 400000},
+    {"name": "charlie", "guaranteed": 300000, "weight": 2, "demand": 700000},
+    {"name": "delta", "guaranteed": 0, "weight": 1, "demand": 600000},
+    {"name": "echo", "guaranteed": 0, "weight": 3, "demand": 900000}
+  ]
+}

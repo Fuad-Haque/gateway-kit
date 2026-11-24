@@ -1,0 +1,6 @@
+[
+  {"id": "r1", "prompt_tokens": 12000, "cached_tokens": 10000, "completion_tokens": 400},
+  {"id": "r2", "prompt_tokens": 8000, "cached_tokens": 0, "completion_tokens": 1200},
+  {"id": "r3", "prompt_tokens": 15000, "cached_tokens": 14000, "completion_tokens": 300},
+  {"id": "r4", "prompt_tokens": 6000, "cached_tokens": 5000, "completion_tokens": 800}
+]

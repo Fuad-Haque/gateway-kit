@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CLI: route",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "gateway_kit",
+      "args": ["route"],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "CLI: tpm (custom capacity)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "gateway_kit",
+      "args": ["tpm", "--capacity", "1750000"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Pytest: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["${file}", "-x", "-vv"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

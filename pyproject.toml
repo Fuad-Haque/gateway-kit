@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gateway-kit"
+version = "0.1.0"
+description = "LLM gateway decision tools: routing, semantic cache, TPM fairness, billing."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []          # standard library only: nothing here needs a framework
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "hypothesis>=6", "ruff>=0.5"]
+
+[project.scripts]
+gateway-kit = "gateway_kit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
